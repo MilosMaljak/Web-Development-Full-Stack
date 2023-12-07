@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 3px 8px; /* Adjusted padding for a smaller button */
+    cursor: pointer;
+}
+
+.add-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.add-input {
+    flex: 1;
+    padding: 8px;
+}
+
+.add-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.task-label {
+    flex: 1; /* Takes remaining space in the flex container */
+}
+
+.checkbox:checked + .task-label {
+    text-decoration: line-through;
+}
